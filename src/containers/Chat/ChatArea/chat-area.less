@@ -1,0 +1,134 @@
+.chat-area {
+  position: absolute;
+  top: 0;
+  right: 380px;
+  left: 0;
+  bottom: 0;
+}
+
+.message-area {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  bottom: 215px;
+}
+
+.chat-box {
+  position: relative;
+  height: 100%;
+  background: #FFF;
+}
+
+.editor {
+  position: absolute;
+  width: 100%;
+  height: 215px;
+  bottom: 0;
+  border-top: 1px solid #eee;
+
+  .input-area {
+    padding: 10px;
+
+    textarea {
+      width: 100%;
+      border: none;
+      background: #f8f8f8;
+      resize: none;
+      padding: 8px;
+      border-radius: 5px;
+      outline: none;
+    }
+  }
+}
+
+.im-area {
+  position: relative;
+
+  textarea {
+    height: 125px;
+  }
+
+  .footer {
+    padding-right: 10px;
+    text-align: right;
+    color: #888;
+  }
+}
+
+.voip-area {
+  width: 100%;
+  margin: 0 auto;
+
+  .voip-status {
+    text-align: center;
+
+    textarea {
+      height: auto;
+    }
+  }
+
+  .voip-btn {
+    display: inline-block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+
+    &.inbound,
+    &.outbound {
+      background: #4dd863;
+    }
+
+    &.hangup {
+      background: #e1473f;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.quick-reply-prompt {
+  top: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 101px;
+  overflow: auto;
+  font-size: 12px;
+
+  li {
+    background: #eee;
+    border: 1px solid #fff;
+    padding: 0 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+      background: #cbcbcb;
+    }
+
+    &.active {
+      background: #cbcbcb;
+    }
+  }
+
+  .shortcut {
+    font-weight: 700;
+    margin-right: 10px;
+    margin-left: 5px;
+    color: #3a4951;
+  }
+
+  .content {
+    i {
+      color: red;
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
+}

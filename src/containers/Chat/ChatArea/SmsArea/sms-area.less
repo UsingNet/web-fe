@@ -1,0 +1,78 @@
+.sms-area {
+  height: 125px;
+  border-radius: 5px;
+  padding: 8px;
+  position: relative;
+  background: rgb(248, 248, 248);
+
+  .send-sms {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+  }
+}
+
+.sms-template-select {
+  span {
+    font-size: 12px;
+  }
+
+  :global {
+    .ant-select {
+      width: 160px;
+    }
+  }
+}
+
+.sms-template-content {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  position: relative;
+
+  &:before {
+    content: '';
+    border-color: transparent;
+    border-style: solid;
+    border-right-color: #E1EFF7;
+    border-width: 12px 12px 12px 0;
+    position: absolute;
+    top: 30px;
+    left: -2px;
+  }
+
+  & > div {
+    padding: 10px;
+    background: #E1EFF7;
+    border-radius: 5px;
+    width: 80%;
+    height: 74px;
+    overflow: auto;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 80px;
+    background: #E1EFF7;
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    height: 18px;
+    text-align: center;
+    outline: none;
+
+    &::-webkit-input-placeholder {
+      color: #ABA6A6;
+      text-align: center;
+    }
+  }
+
+  button {
+    position: absolute;
+    bottom  : 8px;
+    right   : 8px;
+  }
+}

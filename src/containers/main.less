@@ -1,0 +1,166 @@
+@import '../styles/scrollbar-beautify';
+@import '../styles/highlightCode';
+@import '../styles/emoji';
+@import '../styles/ua-icon-sprite';
+
+:global {
+  @import "../styles/font-awesome/less/font-awesome";
+
+  #__USINGNET_HANDLE {
+    display: none;
+  }
+
+  #view {
+    height: 100%;
+  }
+
+  .__usingnetClassNameForCustom {
+    display: none;
+  }
+
+  .ant-dropdown-menu.ant-dropdown-menu-vertical.ant-dropdown-menu-root {
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  .user-agent-info {
+    // userAgent解析显示的图标
+    .devices {
+      padding: 7px 0;
+      display: flex;
+      align-items: center;
+
+      i {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      .bot {
+        .sprite(@bot);
+      }
+
+      .desktop {
+        .sprite(@desktop);
+      }
+
+      .mobile {
+        .sprite(@mobile);
+      }
+
+      .chrome,
+      .chromium,
+      .google.browser {
+        .sprite(@chrome);
+      }
+
+      .maxthon {
+        .sprite(@maxthon);
+      }
+
+      .qq.browser {
+        .sprite(@qqbrowser);
+      }
+
+      .sogou.explorer {
+        .sprite(@sogou);
+      }
+
+      .miui.browser {
+        .sprite(@miui);
+      }
+
+      .ios,
+      .mac.os.x {
+        .sprite(@ios);
+      }
+
+      .baiduboxapp {
+        .sprite(@baiduboxapp);
+      }
+
+      .qt {
+        .sprite(@qt);
+      }
+
+      .wechat {
+        .sprite(@wechat);
+      }
+
+      .firefox {
+        .sprite(@firefox);
+      }
+
+      .internet.explorer {
+        .sprite(@ie);
+      }
+
+      .android {
+        .sprite(@android);
+      }
+
+      .linux,
+      .ubuntu {
+        .sprite(@linux);
+      }
+
+      .opera {
+        .sprite(@opera);
+      }
+
+      .safari {
+        .sprite(@safari);
+      }
+
+      .windows {
+        .sprite(@windows);
+      }
+
+      .browser.uc {
+        .sprite(@uc);
+      }
+    }
+  }
+}
+
+.app {
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  background-color: #fff;
+  margin-left: 60px;
+  height: 100%;
+}
+
+.content-wrapper {
+  // background: #ECECEC;
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  bottom: 0;
+  overflow: hidden;
+  // voip flash 容器
+  #flash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -90px;
+  }
+
+  .window-timeout {
+    margin: 20px;
+  }
+}
+
+.table-operation-region {
+  // 规定表格顶部操作列的样式
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  & > * {
+    margin: 0 0 10px 5px;
+  }
+}

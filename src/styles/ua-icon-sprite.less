@@ -1,0 +1,308 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@android-name: 'android';
+@android-x: 16px;
+@android-y: 0px;
+@android-offset-x: -16px;
+@android-offset-y: 0px;
+@android-width: 16px;
+@android-height: 16px;
+@android-total-width: 80px;
+@android-total-height: 64px;
+@android-image: '../../resource/images/uaIcon-sprite.png';
+@android: 16px 0px -16px 0px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'android';
+@baiduboxapp-name: 'baiduboxapp';
+@baiduboxapp-x: 48px;
+@baiduboxapp-y: 16px;
+@baiduboxapp-offset-x: -48px;
+@baiduboxapp-offset-y: -16px;
+@baiduboxapp-width: 16px;
+@baiduboxapp-height: 16px;
+@baiduboxapp-total-width: 80px;
+@baiduboxapp-total-height: 64px;
+@baiduboxapp-image: '../../resource/images/uaIcon-sprite.png';
+@baiduboxapp: 48px 16px -48px -16px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'baiduboxapp';
+@bot-name: 'bot';
+@bot-x: 0px;
+@bot-y: 16px;
+@bot-offset-x: 0px;
+@bot-offset-y: -16px;
+@bot-width: 16px;
+@bot-height: 16px;
+@bot-total-width: 80px;
+@bot-total-height: 64px;
+@bot-image: '../../resource/images/uaIcon-sprite.png';
+@bot: 0px 16px 0px -16px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'bot';
+@chrome-name: 'chrome';
+@chrome-x: 16px;
+@chrome-y: 16px;
+@chrome-offset-x: -16px;
+@chrome-offset-y: -16px;
+@chrome-width: 16px;
+@chrome-height: 16px;
+@chrome-total-width: 80px;
+@chrome-total-height: 64px;
+@chrome-image: '../../resource/images/uaIcon-sprite.png';
+@chrome: 16px 16px -16px -16px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'chrome';
+@desktop-name: 'desktop';
+@desktop-x: 32px;
+@desktop-y: 0px;
+@desktop-offset-x: -32px;
+@desktop-offset-y: 0px;
+@desktop-width: 16px;
+@desktop-height: 16px;
+@desktop-total-width: 80px;
+@desktop-total-height: 64px;
+@desktop-image: '../../resource/images/uaIcon-sprite.png';
+@desktop: 32px 0px -32px 0px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'desktop';
+@firefox-name: 'firefox';
+@firefox-x: 32px;
+@firefox-y: 16px;
+@firefox-offset-x: -32px;
+@firefox-offset-y: -16px;
+@firefox-width: 16px;
+@firefox-height: 16px;
+@firefox-total-width: 80px;
+@firefox-total-height: 64px;
+@firefox-image: '../../resource/images/uaIcon-sprite.png';
+@firefox: 32px 16px -32px -16px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'firefox';
+@ie-name: 'ie';
+@ie-x: 0px;
+@ie-y: 32px;
+@ie-offset-x: 0px;
+@ie-offset-y: -32px;
+@ie-width: 16px;
+@ie-height: 16px;
+@ie-total-width: 80px;
+@ie-total-height: 64px;
+@ie-image: '../../resource/images/uaIcon-sprite.png';
+@ie: 0px 32px 0px -32px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'ie';
+@ios-name: 'ios';
+@ios-x: 16px;
+@ios-y: 32px;
+@ios-offset-x: -16px;
+@ios-offset-y: -32px;
+@ios-width: 16px;
+@ios-height: 16px;
+@ios-total-width: 80px;
+@ios-total-height: 64px;
+@ios-image: '../../resource/images/uaIcon-sprite.png';
+@ios: 16px 32px -16px -32px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'ios';
+@linux-name: 'linux';
+@linux-x: 32px;
+@linux-y: 32px;
+@linux-offset-x: -32px;
+@linux-offset-y: -32px;
+@linux-width: 16px;
+@linux-height: 16px;
+@linux-total-width: 80px;
+@linux-total-height: 64px;
+@linux-image: '../../resource/images/uaIcon-sprite.png';
+@linux: 32px 32px -32px -32px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'linux';
+@maxthon-name: 'maxthon';
+@maxthon-x: 48px;
+@maxthon-y: 0px;
+@maxthon-offset-x: -48px;
+@maxthon-offset-y: 0px;
+@maxthon-width: 16px;
+@maxthon-height: 16px;
+@maxthon-total-width: 80px;
+@maxthon-total-height: 64px;
+@maxthon-image: '../../resource/images/uaIcon-sprite.png';
+@maxthon: 48px 0px -48px 0px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'maxthon';
+@miui-name: 'miui';
+@miui-x: 0px;
+@miui-y: 0px;
+@miui-offset-x: 0px;
+@miui-offset-y: 0px;
+@miui-width: 16px;
+@miui-height: 16px;
+@miui-total-width: 80px;
+@miui-total-height: 64px;
+@miui-image: '../../resource/images/uaIcon-sprite.png';
+@miui: 0px 0px 0px 0px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'miui';
+@mobile-name: 'mobile';
+@mobile-x: 48px;
+@mobile-y: 32px;
+@mobile-offset-x: -48px;
+@mobile-offset-y: -32px;
+@mobile-width: 16px;
+@mobile-height: 16px;
+@mobile-total-width: 80px;
+@mobile-total-height: 64px;
+@mobile-image: '../../resource/images/uaIcon-sprite.png';
+@mobile: 48px 32px -48px -32px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'mobile';
+@opera-name: 'opera';
+@opera-x: 0px;
+@opera-y: 48px;
+@opera-offset-x: 0px;
+@opera-offset-y: -48px;
+@opera-width: 16px;
+@opera-height: 16px;
+@opera-total-width: 80px;
+@opera-total-height: 64px;
+@opera-image: '../../resource/images/uaIcon-sprite.png';
+@opera: 0px 48px 0px -48px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'opera';
+@qqbrowser-name: 'qqbrowser';
+@qqbrowser-x: 16px;
+@qqbrowser-y: 48px;
+@qqbrowser-offset-x: -16px;
+@qqbrowser-offset-y: -48px;
+@qqbrowser-width: 16px;
+@qqbrowser-height: 16px;
+@qqbrowser-total-width: 80px;
+@qqbrowser-total-height: 64px;
+@qqbrowser-image: '../../resource/images/uaIcon-sprite.png';
+@qqbrowser: 16px 48px -16px -48px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'qqbrowser';
+@qt-name: 'qt';
+@qt-x: 32px;
+@qt-y: 48px;
+@qt-offset-x: -32px;
+@qt-offset-y: -48px;
+@qt-width: 16px;
+@qt-height: 16px;
+@qt-total-width: 80px;
+@qt-total-height: 64px;
+@qt-image: '../../resource/images/uaIcon-sprite.png';
+@qt: 32px 48px -32px -48px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'qt';
+@safari-name: 'safari';
+@safari-x: 48px;
+@safari-y: 48px;
+@safari-offset-x: -48px;
+@safari-offset-y: -48px;
+@safari-width: 16px;
+@safari-height: 16px;
+@safari-total-width: 80px;
+@safari-total-height: 64px;
+@safari-image: '../../resource/images/uaIcon-sprite.png';
+@safari: 48px 48px -48px -48px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'safari';
+@sogou-name: 'sogou';
+@sogou-x: 64px;
+@sogou-y: 0px;
+@sogou-offset-x: -64px;
+@sogou-offset-y: 0px;
+@sogou-width: 16px;
+@sogou-height: 16px;
+@sogou-total-width: 80px;
+@sogou-total-height: 64px;
+@sogou-image: '../../resource/images/uaIcon-sprite.png';
+@sogou: 64px 0px -64px 0px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'sogou';
+@uc-name: 'uc';
+@uc-x: 64px;
+@uc-y: 16px;
+@uc-offset-x: -64px;
+@uc-offset-y: -16px;
+@uc-width: 16px;
+@uc-height: 16px;
+@uc-total-width: 80px;
+@uc-total-height: 64px;
+@uc-image: '../../resource/images/uaIcon-sprite.png';
+@uc: 64px 16px -64px -16px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'uc';
+@wechat-name: 'wechat';
+@wechat-x: 64px;
+@wechat-y: 32px;
+@wechat-offset-x: -64px;
+@wechat-offset-y: -32px;
+@wechat-width: 16px;
+@wechat-height: 16px;
+@wechat-total-width: 80px;
+@wechat-total-height: 64px;
+@wechat-image: '../../resource/images/uaIcon-sprite.png';
+@wechat: 64px 32px -64px -32px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'wechat';
+@windows-name: 'windows';
+@windows-x: 64px;
+@windows-y: 48px;
+@windows-offset-x: -64px;
+@windows-offset-y: -48px;
+@windows-width: 16px;
+@windows-height: 16px;
+@windows-total-width: 80px;
+@windows-total-height: 64px;
+@windows-image: '../../resource/images/uaIcon-sprite.png';
+@windows: 64px 48px -64px -48px 16px 16px 80px 64px '../../resource/images/uaIcon-sprite.png' 'windows';
+@spritesheet-width: 80px;
+@spritesheet-height: 64px;
+@spritesheet-image: '../../resource/images/uaIcon-sprite.png';
+@spritesheet-sprites: @android @baiduboxapp @bot @chrome @desktop @firefox @ie @ios @linux @maxthon @miui @mobile @opera @qqbrowser @qt @safari @sogou @uc @wechat @windows;
+@spritesheet: 80px 64px '../../resource/images/uaIcon-sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

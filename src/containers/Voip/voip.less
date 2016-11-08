@@ -1,0 +1,61 @@
+.phone-access {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+
+  .phone-number {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .phone-access-body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .back-to-setting-number-btn {
+      margin: 0 auto;
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      width: 580px;
+
+      .number-to-bind-input {
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+
+        input::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+        }
+      }
+    }
+
+    .upload-list-inline {
+      &.phone-access-checking {
+        :global {
+          i.anticon-cross {
+            display: none;
+          }
+        }
+      }
+
+      :global {
+        .ant-upload-list-item {
+          display: inline-block;
+          width: 200px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

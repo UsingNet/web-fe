@@ -1,0 +1,77 @@
+.fast-reply {
+  position: absolute;
+  right: -380px;
+  width: 380px;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  background: #FFFFFF;
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: 0.2s right ease-in-out;
+
+  &.open {
+    right: 0;
+  }
+
+  header {
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid #eee;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+    span {
+      margin-left: 10px;
+    }
+
+    .set-close {
+      a {
+        color: #666;
+      }
+
+      > i {
+        margin: 0 10px;
+        cursor: pointer;
+        color: #666;
+      }
+    }
+  }
+
+  :global {
+    .ant-tabs-nav {
+      width: 100%;
+    }
+
+    .ant-tabs-tab {
+      text-align: center;
+      width: 50%;
+      margin-right: 0;
+    }
+  }
+}
+
+.replies {
+  padding: 15px;
+
+  li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &:hover {
+      .shortcut {
+        color: #a9aeb1
+      }
+    }
+  }
+}
+
+.shortcut {
+  font-weight: 700;
+  color: #3a4951;
+  margin-right: 10px;
+}

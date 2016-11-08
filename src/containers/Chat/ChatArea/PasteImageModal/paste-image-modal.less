@@ -1,0 +1,54 @@
+.paste-input {
+  width: 100%;
+  height: 50px;
+  opacity: 0.01;
+  color: rgba(255,255,255,0);
+}
+
+.paste-area {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: -50px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+
+  &.focus{
+    border-color: #57c5f7;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+  }
+}
+
+.canvasContainer{
+  overflow: hidden;
+
+  canvas{
+    max-width: 100%;
+    border: 1px #000 solid;
+  }
+}
+
+.rectangular-tool{
+  position: absolute;
+  border: 1px #f00 solid;
+}
+
+textarea.text-tool{
+  position:absolute;
+  line-height: 17px;
+  font-size: 16px;
+  color: #f00;
+  background: transparent;
+  border:none;
+  resize: none;
+  z-index: 100;
+}
+
+textarea.text-tool:focus{
+  border: 1px rgb(169, 169, 169) solid;
+  resize: both;
+}

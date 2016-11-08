@@ -1,0 +1,128 @@
+.contentMixin() {
+  position: absolute;
+  top: 42px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 20px;
+}
+
+.history {
+  padding: 20px;
+  height: 100%;
+}
+
+.contact-avatar {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.conversation-history {
+  position: absolute;
+  top: 0;
+  right: -1000px;
+  transition: 0.75s right;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  width: 900px;
+  background-color: white;
+  font-size: 14px;
+
+  &.open {
+    right: 0;
+    box-shadow: -2px 0 10px #eee;
+  }
+}
+
+.history-record {
+  position: relative;
+  flex: 1.5;
+  margin-right: 5px;
+
+  .head {
+    height: 42px;
+    border-bottom: 1px solid #e6eaeb;
+    line-height: 42px;
+    font-size: 1.2em;
+    background-color: white;
+  }
+
+  .close {
+    width: 42px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .content {
+    .contentMixin();
+  }
+}
+
+.user-info {
+  position: relative;
+  flex: 1;
+  border-left: 1px solid #ccc;
+
+  .head {
+    text-align: center;
+    height: 42px;
+    border-bottom: 1px solid #e6eaeb;
+    line-height: 42px;
+    font-size: 1.2em;
+    background-color: white;
+  }
+
+  .user-content {
+    padding: 15px 20px;
+    .contentMixin();
+    overflow: auto;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+
+  .info-item {
+    margin-bottom: 20px;
+  }
+
+  .items {
+    :global {
+      .ant-row {
+        margin-bottom: 8px;
+        height: 32px;
+        line-height: 32px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    .text-right {
+      text-align: right;
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 8px;
+      height: 32px;
+      line-height: 32px;
+
+      p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      span {
+        text-align: right;
+      }
+    }
+  }
+}

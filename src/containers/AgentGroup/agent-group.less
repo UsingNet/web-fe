@@ -1,0 +1,85 @@
+.agent-group {
+  .card {
+    position: relative;
+    width: 300px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 180px;
+
+    :global {
+      .ant-card-body {
+        padding: 15px;
+      }
+    }
+  }
+
+  .title {
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .member-list {
+    margin-top: 10px;
+    max-height: 88px;
+    overflow-y: auto;
+
+    li {
+      display: inline-block;
+      margin: 7px;
+      text-align: center;
+      max-width: 66px;
+      overflow-x: hidden;
+
+      img {
+        display: block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+
+      span {
+        display: block;
+        padding-top: 5px;
+        max-width: 66px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  .actions {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+
+    > span, i {
+      cursor: pointer;
+    }
+  }
+
+  .members {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .new-group {
+    display: block;
+    text-align: center;
+    height: 100%;
+    cursor: pointer;
+
+    i {
+      border: none;
+      font-size: 54px;
+      margin-top: 48px;
+      opacity: 0.4;
+    }
+  }
+}

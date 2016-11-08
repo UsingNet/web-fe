@@ -1,0 +1,109 @@
+.chat-info-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 15px;
+  width: 380px;
+  bottom: 0;
+  background: #f8f8f8;
+
+  :global {
+    .ant-tabs {
+      height: 100%;
+    }
+
+    .ant-tabs-content {
+      position: absolute;
+      top: 45px;
+      bottom: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      > div {
+        height: 100%;
+      }
+    }
+
+    .ant-tabs-tabpane {
+      height: 100%;
+
+      &:last-child {
+        overflow: hidden;
+      }
+
+      &:first-child {
+        overflow: auto;
+      }
+    }
+  }
+
+  .info-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 400;
+      color: #222222;
+    }
+  }
+
+  .info-row {
+    margin-bottom: 8px;
+
+    label {
+      font-size: 14px;
+    }
+
+    .info-label {
+      font-size: 14px;
+    }
+
+    .info-detail {
+      line-height: 35px;
+      .track {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      :global {
+        .anticon-caret-circle-o-down:before {
+          min-width: 20%;
+          font-size: 16px;
+          cursor: pointer;
+          color: #2db7f5;
+        }
+      }
+    }
+  }
+
+  .info-label {
+    color: #aaa;
+    text-align: right;
+    vertical-align: middle;
+    padding: 7px 0;
+  }
+
+  .flat-input {
+    border-color: #f8f8f8;
+    background: #f8f8f8;
+
+    &:focus {
+      box-shadow: none;
+      border: 1px solid #2db7f5;
+      background: #fff;
+    }
+  }
+}
+
+.timeline {
+  h5 {
+    padding: 0 0 10px;
+  }
+
+  :global {
+    .ant-timeline-item.ant-timeline-item-last {
+      height: 24px;
+    }
+  }
+}

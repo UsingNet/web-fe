@@ -1,0 +1,187 @@
+.active-btn {
+  background: #f60;
+  color: #fff;
+  border-color: #f60;
+}
+
+.combo-setting {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.set-combo {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .spacer {
+    flex-grow: 1;
+  }
+
+  .combo-form {
+    align-self: flex-start;
+    min-width: 810px;
+
+    .plan-card {
+      overflow: hidden;
+      margin-bottom: 20px;
+      width: 210px;
+      height: 300px;
+      border: 1px solid #e9e9e9;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .header {
+      height: 95px;
+      line-height: 95px;
+      border-bottom: 1px solid #ddd;
+      background: #f8f8f8;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+      }
+    }
+
+    .body {
+      height: 120px;
+
+      h4 {
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+
+    .footer {
+      height: 92px;
+      border-top: 1px solid #ddd;
+      background: #f8f8f8;
+      line-height: 85px;
+
+      span {
+        font-size: 14px;
+        color: #888888;
+      }
+    }
+
+    .price-wrapper {
+      margin-top: 18px;
+
+      h4 {
+        font-weight: normal;
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      .price {
+        font-weight: 300;
+        font-size: 48px;
+      }
+    }
+
+    :global {
+      .ant-radio {
+        display: none;
+      }
+
+      .ant-radio-wrapper {
+        > span:nth-child(2) {
+          display: block;
+        }
+      }
+
+      .ant-radio-wrapper-checked {
+        :local {
+          .plan-card {
+            box-shadow: 0 0 8px #2db7f5;
+            border-color: #2db7f5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pay-confirm {
+  hr {
+    height: 1px;
+    border: none;
+    border-top: 1px dashed #e9e9e9;
+  }
+}
+
+.combo-preview {
+  min-width: 205px;
+  height: 100%;
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 10px;
+
+  .header {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #f9ebeb;
+  }
+
+  li {
+    margin: 22px 0;
+
+    .title {
+      display: inline-block;
+      width: 60px;
+      text-align: right;
+      margin-right: 4px;
+      font-weight: bold;
+    }
+
+    button {
+      width: 100%;
+      display: block;
+    }
+
+    .next-btn-active {
+      .active-btn;
+    }
+  }
+}
+
+.number {
+  color: #f60;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.confirm-btn-group {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.pay-btn {
+  margin-left: 10px;
+  .active-btn;
+
+  &:hover {
+    .active-btn;
+  }
+}
+
+.pay {
+  background: #f7f7f7;
+  padding: 10px;
+  border-left: 3px solid #f60;
+  margin-bottom: 10px;
+
+  > div {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.at-end {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

@@ -1,0 +1,125 @@
+.wechats,
+.weibos {
+  overflow: hidden;
+
+  :global {
+    .ant-card-body {
+      height: 100%;
+      padding: 15px;
+    }
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .action {
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 300px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 180px;
+
+    .body {
+      overflow: hidden;
+
+      .hd {
+        overflow: hidden;
+        border-bottom: 1px solid #DDD;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+
+        h4 {
+          float: left;
+          width: 180px;
+        }
+
+        .ant-tag {
+          float: right;
+        }
+      }
+
+      .img {
+        float: left;
+        margin-right: 15px;
+        display: inline-block;
+
+        img {
+          width: 80px;
+        }
+      }
+
+      .action {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+        opacity: 1;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        i {
+          margin-left: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:hover {
+      .action {
+        opacity: 1;
+      }
+    }
+  }
+
+  .add {
+    a,
+    span {
+      display: block;
+      text-align: center;
+      height: 100%;
+      cursor: pointer;
+
+      i {
+        margin-top: 48px;
+        font-size: 54px;
+        color: #858585;
+        opacity: 0.4;
+      }
+
+      &:hover {
+        i {
+          color: #57c5f7;
+        }
+      }
+    }
+  }
+
+  .desc {
+    line-height: 2;
+    margin-top: 50px;
+
+    ul {
+      list-style-type: disc;
+      padding-left: 50px;
+      font-size: 12px;
+      color: #888;
+    }
+  }
+}
+
+.setting-weibo-tips {
+  width: 400px;
+  margin: 0 auto;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 2;
+
+  ul {
+    list-style-type: decimal;
+  }
+}

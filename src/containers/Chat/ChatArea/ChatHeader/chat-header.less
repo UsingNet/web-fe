@@ -1,0 +1,41 @@
+.header {
+  height: 40px;
+  border-bottom: 1px solid #DDD;
+  line-height: 40px;
+  overflow: hidden;
+
+  .name {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .action {
+    width: 160px;
+    height: 40px;
+    float: right;
+
+    .shift {
+      width: 120px;
+      text-align: right;
+      display: inline-block;
+      margin-right: 10px;
+
+      a {
+        display: block;
+      }
+    }
+
+    .close {
+      font-size: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      color: #CCC;
+      transition: color .5s;
+
+      &:hover {
+        color: #555;
+      }
+    }
+  }
+}

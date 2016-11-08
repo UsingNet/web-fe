@@ -1,0 +1,56 @@
+.sidebar {
+  width: 60px;
+  background: #393c40;
+  text-align: center;
+  padding-top: 10px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+
+  .logo {
+    width: 40px;
+  }
+
+  .menu {
+    margin-top: 30px;
+
+    li {
+      line-height: 4;
+
+      &:hover {
+        background: #1f282c;
+      }
+
+      &.current {
+        background: #1f282c;
+      }
+
+    }
+
+    a {
+      display: block;
+    }
+
+    i {
+      color: #EEE;
+      font-size: 25px;
+      vertical-align: middle;
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    left: 0;
+    color: white;
+    cursor: pointer;
+  }
+
+  .to-nest-im {
+    display: block;
+    width: 100%;
+  }
+}

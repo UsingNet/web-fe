@@ -1,0 +1,73 @@
+.header {
+  .header-box {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-bar {
+    font-size: 18px;
+    padding-left: 10px;
+    display: inline-block;
+  }
+
+  .action-bar {
+    width: 160px;
+    text-align: right;
+    float: right;
+    margin-right: 20px;
+
+    .status {
+      font-size: 12px;
+      display: inline-block;
+      margin-left: 10px;
+      cursor: pointer;
+
+      .dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background: #46be8a;
+        margin-right: 3px;
+      }
+    }
+
+    .offline {
+      color: #ccc;
+
+      .dot {
+        background: #ccc;
+      }
+    }
+
+    .voip {
+      border: 1px solid #ddd;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 30px;
+      text-align: center;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .user {
+      display: inline-block;
+      margin-right: 15px;
+      margin-left: 15px;
+
+      a {
+        display: block;
+      }
+
+      .avatar {
+        vertical-align: middle;
+        width: 35px;
+        height: 35px;
+        border-radius: 35px;
+      }
+    }
+  }
+}

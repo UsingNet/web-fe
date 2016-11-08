@@ -1,0 +1,121 @@
+.messages {
+  padding: 10px 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+
+  img {
+    max-height: 500px;
+    max-width: 100%;
+  }
+
+  .more-message {
+    height: 20px;
+    text-align: center;
+    color: #2db7f5;
+    cursor: pointer;
+  }
+}
+
+.message-item {
+  width: 100%;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  clear: both;
+
+  a {
+    color: white;
+  }
+
+  .bd {
+    max-width: 100%;
+  }
+
+  .date {
+    font-size: 12px;
+    display: inline-block;
+    color: #ccc;
+  }
+
+  .check-mail {
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+    color: #2db7f5;
+  }
+
+  &.receive {
+    .bd {
+      max-width: 70%;
+      color: #FFF;
+      background: #7ed589;
+      display: inline-block;
+      border-radius: 3px;
+      padding: 3px 5px;
+    }
+
+    .date {
+      margin-left: 8px;
+    }
+  }
+
+  &.send {
+    float: right;
+    position: relative;
+
+    .hd {
+      text-align: right;
+    }
+
+    .date {
+      font-size: 12px;
+      margin-right: 8px;
+    }
+
+    .bd {
+      color: #fff;
+      border-radius: 3px;
+      padding: 3px 5px;
+      background: #77c4f1;
+    }
+
+    .undo {
+      background: #ccc;
+    }
+
+    .message-inner {
+      max-width: 70%;
+      text-align: left;
+      display: inline-block;
+      float: right;
+      position: relative;
+
+      &:hover {
+        .undo-action {
+          display: block;
+        }
+      }
+    }
+
+    .undo-action {
+      position: absolute;
+      display: none;
+      font-size: 12px;
+      background: #f8f8f8;
+      min-width: 28px;
+      width: auto;
+
+      a, span {
+        color: #2db7f5;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.system {
+    text-align: center;
+    color: #CCC;
+    margin: 0 auto;
+  }
+}

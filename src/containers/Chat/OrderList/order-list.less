@@ -1,0 +1,76 @@
+.sidebar {
+  position: absolute;
+  height: 100%;
+  z-index: 1000;
+  width: 260px;
+  border-right: 1px solid #EEE;
+  background: #FFF;
+
+  h4 {
+    font-weight: normal;
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    border-bottom: 1px solid #EEE;
+    overflow: hidden;
+
+    .order-num {
+      float: right;
+      color: #888;
+    }
+  }
+}
+
+.order-list {
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.order-item {
+  height: 82px;
+
+  a {
+    width: 260px;
+    height: 82px;
+    margin: 0;
+    padding: 20px;
+    display: inline-block;
+
+    &:hover {
+      background: #f8f8f8;
+    }
+
+    &.current {
+      background: #eee;
+    }
+  }
+
+  .badge {
+    sup {
+      right: 7px;
+      top: 50px;
+    }
+  }
+
+  .img {
+    float: left;
+    margin-right: 10px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 40px;
+    }
+  }
+
+  .info {
+    .date {
+      float: right;
+      color: #AAA;
+    }
+  }
+}
